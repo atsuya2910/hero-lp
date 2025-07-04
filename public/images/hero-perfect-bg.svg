@@ -1,0 +1,38 @@
+<svg width="100%" height="100%" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="main-bg" x1="0" y1="0" x2="1440" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fafdff" />
+      <stop offset="0.5" stop-color="#eaf6ff" />
+      <stop offset="1" stop-color="#dbeafe" />
+    </linearGradient>
+    <radialGradient id="navy-spot" cx="80%" cy="10%" r="60%" fx="80%" fy="10%">
+      <stop offset="0%" stop-color="#1E2A38" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#1E2A38" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="turq-spot" cx="20%" cy="90%" r="60%" fx="20%" fy="90%">
+      <stop offset="0%" stop-color="#50E3C2" stop-opacity="0.13" />
+      <stop offset="100%" stop-color="#50E3C2" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="ui-window" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#fff" stop-opacity="0.95" />
+      <stop offset="1" stop-color="#eaf6ff" stop-opacity="0.85" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#main-bg)"/>
+  <ellipse cx="1200" cy="100" rx="400" ry="180" fill="url(#navy-spot)"/>
+  <ellipse cx="300" cy="800" rx="320" ry="120" fill="url(#turq-spot)"/>
+  <!-- UIウィンドウ風 -->
+  <rect x="420" y="180" rx="32" width="600" height="340" fill="url(#ui-window)" stroke="#e0e7ef" stroke-width="2"/>
+  <rect x="440" y="220" rx="12" width="180" height="32" fill="#eaf6ff" />
+  <rect x="640" y="220" rx="12" width="120" height="32" fill="#dbeafe" />
+  <rect x="440" y="270" rx="8" width="520" height="18" fill="#e0e7ef" />
+  <rect x="440" y="300" rx="8" width="320" height="18" fill="#e0e7ef" />
+  <rect x="440" y="340" rx="8" width="520" height="18" fill="#e0e7ef" />
+  <rect x="440" y="370" rx="8" width="220" height="18" fill="#e0e7ef" />
+  <rect x="440" y="410" rx="8" width="520" height="18" fill="#e0e7ef" />
+  <rect x="440" y="440" rx="8" width="320" height="18" fill="#e0e7ef" />
+  <!-- 幾何学パターン -->
+  <circle cx="180" cy="120" r="60" fill="#eaf6ff" fill-opacity="0.7" />
+  <rect x="1200" y="700" width="120" height="120" rx="32" fill="#50E3C2" fill-opacity="0.08" />
+  <rect x="1300" y="780" width="60" height="60" rx="16" fill="#1E2A38" fill-opacity="0.08" />
+</svg> 
