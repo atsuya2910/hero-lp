@@ -1,15 +1,16 @@
 "use client";
 
-import Image from 'next/image';
+import Image from 'next/image'; // Next.jsのImageコンポーネントをインポート
 import { EnvelopeIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/solid';
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-const features = [
-  { label: '最先端AIツール活用' },
-  { label: '短納期（最短5日）' },
-  { label: '適正価格（安価）' },
-];
+// features変数は現在未使用のため削除します。
+// const features = [
+//   { label: '最先端AIツール活用' },
+//   { label: '短納期（最短5日）' },
+//   { label: '適正価格（安価）' },
+// ];
 
 export default function HeroSection() {
   // パララックス用
@@ -28,8 +29,16 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
       {/* 背景画像（hero-perfect-bg.svg） */}
+      {/* <img> タグを Next.js の <Image /> コンポーネントに置き換え、LCP警告も解消 */}
       <div className="absolute inset-0 w-full h-full z-0">
-        <img src="/images/bg.jpg" alt="ヒーロー背景" className="w-full h-full object-cover" />
+        <Image
+          src="/images/bg.jpg"
+          alt="ヒーロー背景"
+          className="w-full h-full object-cover"
+          fill // 親要素いっぱいに広げる
+          style={{ objectFit: 'cover' }} // CSSのobject-fit: cover; と同じ
+          priority // ページのLCP要素として優先的に読み込む
+        />
       </div>
       {/* メインコンテンツ */}
       <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 sm:px-10 pt-20 md:pt-28 pb-10 md:pb-16 gap-12 md:gap-0">
@@ -151,4 +160,4 @@ export default function HeroSection() {
       </div>
     </section>
   );
-} 
+}
